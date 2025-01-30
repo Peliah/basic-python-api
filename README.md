@@ -72,5 +72,3 @@
     "github_url": "https://github.com/Peliah/basic-python-api"
   }
   ```
-
-  hng-12-api
