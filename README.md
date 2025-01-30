@@ -13,7 +13,7 @@
    {
      "email": "pelepoupa@gmail.com",
      "current_datetime": "2025-01-30T09:30:00Z",
-     "github_url": "https://github.com/Peliah/hng12-api"
+     "github_url": "https://github.com/Peliah/basic-python-api"
    }
    ```
 
@@ -25,13 +25,29 @@
    ### Setup Instructions
    1. Clone the repository:
       ```bash
-      git clone https://github.com/Peliah/hng12-api.git
+      git clone https://github.com/Peliah/basic-python-api.git
       ```
-   2. Install dependencies:
+   2. Create a Virtual Environment
       ```bash
-      pip install Flask flask_cors
+      python -m venv venv
       ```
-   3. Run the application:
+   
+   3. Activate the Virtual Environment
+        - On macOS/Linux:
+            ```bash
+            source venv/bin/activate
+            ```
+        - On Windows:
+            ```bash
+            venv\Scripts\activate
+            ```
+        
+   4. Install dependencies:
+      ```bash
+      pip install -r requirements.txt
+      ```
+    
+   5. Run the application:
       ```bash
       python app.py
       ```
@@ -44,12 +60,14 @@
 ### **Final Output**
 
 - **API Endpoint**: `https://your-app.onrender.com/`
-- **GitHub Repository**: `https://github.com/Peliah/hng12-api`
+- **GitHub Repository**: `https://github.com/Peliah/basic-python-api`
 - **Response**:
   ```json
   {
     "email": "pelepoupa@gmail.com",
     "current_datetime": "2025-01-30T09:30:00Z",
-    "github_url": "https://github.com/Peliah/hng12-api"
+    "github_url": "https://github.com/Peliah/basic-python-api"
   }
   ```
+
+  hng-12-api
