@@ -5,7 +5,7 @@
    ## API Documentation
 
    ### Endpoint
-   - **URL**: `https://your-app.onrender.com/`
+   - **URL**: `https://hng-12-api.onrender.com/`
    - **Method**: `GET`
 
    ### Response Format
@@ -19,7 +19,7 @@
 
    ### Example Usage
    ```bash
-   curl https://your-app.onrender.com/
+   curl https://hng-12-api.onrender.com/
    ```
 
    ### Setup Instructions
@@ -59,8 +59,11 @@
 
 ### **Final Output**
 
-- **API Endpoint**: `https://your-app.onrender.com/`
-- **GitHub Repository**: `https://github.com/Peliah/basic-python-api`
+- **API Endpoint**: `https://hng-12-api.onrender.com/`
+- **Test the API Endpoint**
+    ```bash
+    curl https://hng-12-api.onrender.com/
+    ```
 - **Response**:
   ```json
   {
