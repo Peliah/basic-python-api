@@ -83,7 +83,7 @@ curl https://basic-python-api.vercel.app/
 ## **Technologies Used**
 - **FastAPI**: A modern, fast web framework for building APIs.
 - **Uvicorn**: A lightning-fast ASGI server for serving FastAPI apps.
-- **Render**: A cloud platform for deploying web services.
+- **Vercel**: A cloud platform for deploying web services.
 
 ---
 
