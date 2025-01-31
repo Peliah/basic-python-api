@@ -14,14 +14,14 @@ This is a simple public API built with **FastAPI** that returns basic informatio
 - **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
 - **CORS Support**: Handles Cross-Origin Resource Sharing (CORS) to allow requests from any domain.
 - **Caching**: Uses `lru_cache` to cache the response for improved performance.
-- **Deployment**: Deployed on **Render** for public access.
+- **Deployment**: Deployed on **Vercel** for public access.
 
 ---
 
 ## **API Documentation**
 
 ### **Endpoint**
-- **URL**: `https://hng-12-api.onrender.com/`
+- **URL**: `https://basic-python-api.vercel.app/`
 - **Method**: `GET`
 
 ### **Response Format**
@@ -62,26 +62,11 @@ curl http://127.0.0.1:8000/
 
 ---
 
-## **Deployment**
-
-This API is deployed on **Render**. To deploy your own instance:
-
-1. **Sign Up on Render**: Go to [Render](https://render.com) and create an account.
-2. **Create a New Web Service**:
-   - Connect your GitHub repository.
-   - Set the **Start Command** to:
-     ```bash
-     uvicorn main:app --host 0.0.0.0 --port 8000
-     ```
-3. **Deploy**: Render will automatically build and deploy your application.
-
----
-
 ## **Example Usage**
 
 ### **Request**
 ```bash
-curl https://hng-12-api.onrender.com/
+curl https://basic-python-api.vercel.app/
 ```
 
 ### **Response**
