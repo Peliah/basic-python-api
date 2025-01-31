@@ -1,74 +1,122 @@
-   # HNG12 Public API
 
-   This is a simple public API that returns basic information in JSON format.
+---
 
-   ## API Documentation
+# **Basic Python API with FastAPI**
 
-   ### Endpoint
-   - **URL**: `https://hng-12-api.onrender.com/`
-   - **Method**: `GET`
+This is a simple public API built with **FastAPI** that returns basic information in JSON format. The API provides the following details:
+- Your registered email address.
+- The current datetime in ISO 8601 format (UTC).
+- The GitHub URL of the project's codebase.
 
-   ### Response Format
-   ```json
-   {
-     "email": "pelepoupa@gmail.com",
-     "current_datetime": "2025-01-30T09:30:00Z",
-     "github_url": "https://github.com/Peliah/basic-python-api"
-   }
-   ```
+---
 
-   ### Example Usage
-   ```bash
-   curl https://hng-12-api.onrender.com/
-   ```
+## **Features**
+- **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
+- **CORS Support**: Handles Cross-Origin Resource Sharing (CORS) to allow requests from any domain.
+- **Caching**: Uses `lru_cache` to cache the response for improved performance.
+- **Deployment**: Deployed on **Render** for public access.
 
-   ### Setup Instructions
-   1. Clone the repository:
-      ```bash
-      git clone https://github.com/Peliah/basic-python-api.git
-      ```
-   2. Create a Virtual Environment
-      ```bash
-      python -m venv venv
-      ```
-   
-   3. Activate the Virtual Environment
-        - On macOS/Linux:
-            ```bash
-            source venv/bin/activate
-            ```
-        - On Windows:
-            ```bash
-            venv\Scripts\activate
-            ```
-        
-   4. Install dependencies:
-      ```bash
-      pip install -r requirements.txt
-      ```
-    
-   5. Run the application:
-      ```bash
-      python app.py
-      ```
+---
 
-   ### Backlink
-   - [Hire Python Developers](https://hng.tech/hire/python-developers)
+## **API Documentation**
 
+### **Endpoint**
+- **URL**: `https://hng-12-api.onrender.com/`
+- **Method**: `GET`
 
+### **Response Format**
+```json
+{
+  "email": "pelepoupa@gmail.com",
+  "current_datetime": "2023-10-10T12:34:56.789Z",
+  "github_url": "https://github.com/Peliah/basic-python-api"
+}
+```
 
-### **Final Output**
+---
 
-- **API Endpoint**: `https://hng-12-api.onrender.com/`
-- **Test the API Endpoint**
-    ```bash
-    curl https://hng-12-api.onrender.com/
-    ```
-- **Response**:
-  ```json
-  {
-    "email": "pelepoupa@gmail.com",
-    "current_datetime": "2025-01-30T09:30:00Z",
-    "github_url": "https://github.com/Peliah/basic-python-api"
-  }
-  ```
+## **Setup Instructions**
+
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/Peliah/basic-python-api.git
+cd basic-python-api
+```
+
+### **2. Install Dependencies**
+Ensure you have Python 3.7+ installed. Then, install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### **3. Run the Application Locally**
+Start the FastAPI app using Uvicorn:
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
+Visit `http://127.0.0.1:8000/` in your browser or use `curl` to test the API:
+```bash
+curl http://127.0.0.1:8000/
+```
+
+---
+
+## **Deployment**
+
+This API is deployed on **Render**. To deploy your own instance:
+
+1. **Sign Up on Render**: Go to [Render](https://render.com) and create an account.
+2. **Create a New Web Service**:
+   - Connect your GitHub repository.
+   - Set the **Start Command** to:
+     ```bash
+     uvicorn main:app --host 0.0.0.0 --port 8000
+     ```
+3. **Deploy**: Render will automatically build and deploy your application.
+
+---
+
+## **Example Usage**
+
+### **Request**
+```bash
+curl https://hng-12-api.onrender.com/
+```
+
+### **Response**
+```json
+{
+  "email": "pelepoupa@gmail.com",
+  "current_datetime": "2023-10-10T12:34:56.789Z",
+  "github_url": "https://github.com/Peliah/basic-python-api"
+}
+```
+
+---
+
+## **Technologies Used**
+- **FastAPI**: A modern, fast web framework for building APIs.
+- **Uvicorn**: A lightning-fast ASGI server for serving FastAPI apps.
+- **Render**: A cloud platform for deploying web services.
+
+---
+
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## **Backlink**
+- [Hire Python Developers](https://hng.tech/hire/python-developers)
+
+---
+
+## **Contact**
+For questions or feedback, please contact:
+- **Email**: pelepoupa@gmail.com
+- **GitHub**: [Peliah](https://github.com/Peliah)
+
+---
+
+🚀
